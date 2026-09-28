@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Forward Chaining</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+<nav class="navbar">
+
+<div class="logo">
+<span>AI</span> Fault Diagnosis
+</div>
+
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+<ul class="nav-links" id="navLinks">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a class="active" href="forward.html">Forward Chaining</a></li>
+<li><a href="backward.html">Backward Chaining</a></li>
+<li><a href="diagnosis.html">Diagnosis</a></li>
+<li><a href="knowledge.html">Knowledge Base</a></li>
+<li><a href="examples.html">Examples</a></li>
+<li><a href="references.html">References</a></li>
+
+</ul>
+
+</nav>
+</header>
+
+
+<section class="page-title">
+
+<h1>Forward Chaining</h1>
+
+<p>Data-driven reasoning</p>
+
+</section>
+
+
+<section class="section">
+
+<div class="heading">
+
+<p>CONCEPT</p>
+
+<h2>What is Forward Chaining?</h2>
+
+</div>
+
+
+<div class="content">
+
+<p>
+Forward Chaining is a data-driven inference technique.
+It begins with known facts and applies rules whose
+conditions are satisfied.
+</p>
+
+<p>
+The process continues until a conclusion is obtained
+or no more rules can be applied.
+</p>
+
+</div>
+
+
+<div class="flow">
+
+<div class="flow-box">
+<strong>Known Facts</strong>
+<p>Symptoms</p>
+</div>
+
+<div class="arrow">→</div>
+
+<div class="flow-box">
+<strong>Rule Matching</strong>
+<p>Check conditions</p>
+</div>
+
+<div class="arrow">→</div>
+
+<div class="flow-box">
+<strong>New Facts</strong>
+<p>Apply rules</p>
+</div>
+
+<div class="arrow">→</div>
+
+<div class="flow-box">
+<strong>Diagnosis</strong>
+<p>Conclusion</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section gray">
+
+<div class="heading">
+<h2>Example</h2>
+</div>
+
+
+<div class="example">
+
+<h3>Facts</h3>
+
+<p>✔ Computer does not start</p>
+<p>✔ Power LED is off</p>
+
+<h3>Rule</h3>
+
+<div class="code">
+IF computer does not start
+AND power LED is off
+THEN power supply failure
+</div>
+
+<h3>Conclusion</h3>
+
+<div class="success">
+Possible Fault: Power Supply Failure
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+<p>© 2026 AI Fault Diagnosis Project</p>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

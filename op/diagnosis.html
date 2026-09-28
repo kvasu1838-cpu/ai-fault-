@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Diagnosis</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+<span>AI</span> Fault Diagnosis
+</div>
+
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+<ul class="nav-links" id="navLinks">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="forward.html">Forward</a></li>
+<li><a href="backward.html">Backward</a></li>
+<li><a class="active" href="diagnosis.html">Diagnosis</a></li>
+<li><a href="knowledge.html">Knowledge Base</a></li>
+<li><a href="examples.html">Examples</a></li>
+<li><a href="references.html">References</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+
+<section class="page-title">
+
+<h1>AI Fault Diagnosis</h1>
+
+<p>Select symptoms and run the inference engine</p>
+
+</section>
+
+
+<section class="diagnosis">
+
+<div class="diagnosis-card">
+
+<h2>Select Symptoms</h2>
+
+<p>
+Select all symptoms that are observed in the system.
+</p>
+
+
+<div class="symptoms">
+
+<label>
+<input type="checkbox" value="no_power">
+Computer does not start
+</label>
+
+<label>
+<input type="checkbox" value="no_led">
+Power LED is off
+</label>
+
+<label>
+<input type="checkbox" value="fan">
+Cooling fan is not working
+</label>
+
+<label>
+<input type="checkbox" value="overheat">
+System is overheating
+</label>
+
+<label>
+<input type="checkbox" value="shutdown">
+System shuts down automatically
+</label>
+
+<label>
+<input type="checkbox" value="noise">
+Strange noise
+</label>
+
+<label>
+<input type="checkbox" value="slow">
+System is very slow
+</label>
+
+<label>
+<input type="checkbox" value="disk">
+Disk error
+</label>
+
+<label>
+<input type="checkbox" value="blue">
+Blue screen / system error
+</label>
+
+<label>
+<input type="checkbox" value="restart">
+Computer restarts repeatedly
+</label>
+
+<label>
+<input type="checkbox" value="display">
+No display
+</label>
+
+<label>
+<input type="checkbox" value="network">
+Network unavailable
+</label>
+
+</div>
+
+
+<div class="diagnosis-buttons">
+
+<button class="btn"
+        onclick="forwardDiagnosis()">
+
+Run Forward Chaining
+
+</button>
+
+
+<button class="btn purple"
+        onclick="backwardDiagnosis()">
+
+Run Backward Chaining
+
+</button>
+
+
+<button class="clear"
+        onclick="clearDiagnosis()">
+
+Clear
+
+</button>
+
+</div>
+
+</div>
+
+
+<div id="result"></div>
+
+</section>
+
+
+<footer>
+<p>© 2026 AI Fault Diagnosis Project</p>
+</footer>
+
+
+<script src="js/diagnosis.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

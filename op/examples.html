@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Examples</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+<span>AI</span> Fault Diagnosis
+</div>
+
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+<ul class="nav-links" id="navLinks">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="forward.html">Forward</a></li>
+<li><a href="backward.html">Backward</a></li>
+<li><a href="diagnosis.html">Diagnosis</a></li>
+<li><a href="knowledge.html">Knowledge</a></li>
+<li><a class="active" href="examples.html">Examples</a></li>
+<li><a href="references.html">References</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+
+<section class="page-title">
+
+<h1>Diagnosis Examples</h1>
+
+<p>Examples of rule-based fault diagnosis</p>
+
+</section>
+
+
+<section class="section">
+
+
+<div class="example">
+
+<h2>Example 1 — Power Supply Failure</h2>
+
+<h3>Symptoms</h3>
+
+<ul>
+<li>Computer does not start</li>
+<li>Power LED is off</li>
+</ul>
+
+<h3>Rule</h3>
+
+<div class="code">
+IF no_power AND no_led
+THEN power_supply_failure
+</div>
+
+<h3>Result</h3>
+
+<div class="success">
+Possible Power Supply Failure
+</div>
+
+</div>
+
+
+<div class="example">
+
+<h2>Example 2 — Cooling Failure</h2>
+
+<h3>Symptoms</h3>
+
+<ul>
+<li>System is overheating</li>
+<li>Cooling fan is not working</li>
+</ul>
+
+<h3>Rule</h3>
+
+<div class="code">
+IF overheat AND fan
+THEN cooling_failure
+</div>
+
+<h3>Result</h3>
+
+<div class="success">
+Possible Cooling System Failure
+</div>
+
+</div>
+
+
+<div class="example">
+
+<h2>Example 3 — Hard Disk Failure</h2>
+
+<h3>Symptoms</h3>
+
+<ul>
+<li>Strange noise</li>
+<li>Disk error</li>
+</ul>
+
+<h3>Rule</h3>
+
+<div class="code">
+IF noise AND disk
+THEN hard_disk_failure
+</div>
+
+<h3>Result</h3>
+
+<div class="success">
+Possible Hard Disk Failure
+</div>
+
+</div>
+
+
+</section>
+
+
+<footer>
+<p>© 2026 AI Fault Diagnosis Project</p>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

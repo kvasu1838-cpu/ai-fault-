@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Backward Chaining</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+<span>AI</span> Fault Diagnosis
+</div>
+
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+<ul class="nav-links" id="navLinks">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="forward.html">Forward Chaining</a></li>
+<li><a class="active" href="backward.html">Backward Chaining</a></li>
+<li><a href="diagnosis.html">Diagnosis</a></li>
+<li><a href="knowledge.html">Knowledge Base</a></li>
+<li><a href="examples.html">Examples</a></li>
+<li><a href="references.html">References</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+
+<section class="page-title">
+
+<h1>Backward Chaining</h1>
+
+<p>Goal-driven reasoning</p>
+
+</section>
+
+
+<section class="section">
+
+<div class="heading">
+
+<p>CONCEPT</p>
+
+<h2>What is Backward Chaining?</h2>
+
+</div>
+
+
+<div class="content">
+
+<p>
+Backward Chaining is a goal-driven inference technique.
+It starts with a possible conclusion and works backward
+to determine whether the required conditions are satisfied.
+</p>
+
+<p>
+The system searches for rules that can prove the selected
+goal and then checks the conditions of those rules.
+</p>
+
+</div>
+
+
+<div class="flow">
+
+<div class="flow-box">
+<strong>Goal</strong>
+<p>Possible Fault</p>
+</div>
+
+<div class="arrow">←</div>
+
+<div class="flow-box">
+<strong>Find Rule</strong>
+<p>Matching rule</p>
+</div>
+
+<div class="arrow">←</div>
+
+<div class="flow-box">
+<strong>Check Facts</strong>
+<p>Symptoms</p>
+</div>
+
+<div class="arrow">←</div>
+
+<div class="flow-box">
+<strong>Confirm</strong>
+<p>Goal</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section gray">
+
+<div class="heading">
+<h2>Example</h2>
+</div>
+
+
+<div class="example">
+
+<h3>Goal</h3>
+
+<p><strong>Cooling System Failure</strong></p>
+
+<h3>Rule</h3>
+
+<div class="code">
+IF overheating
+AND fan is not working
+THEN cooling system failure
+</div>
+
+<h3>Required Facts</h3>
+
+<p>✔ Is the system overheating?</p>
+<p>✔ Is the cooling fan working?</p>
+
+<h3>Conclusion</h3>
+
+<div class="success">
+If both facts are confirmed, the goal is supported.
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<div class="heading">
+<h2>Forward vs Backward Chaining</h2>
+</div>
+
+<table>
+
+<tr>
+<th>Feature</th>
+<th>Forward Chaining</th>
+<th>Backward Chaining</th>
+</tr>
+
+<tr>
+<td>Approach</td>
+<td>Data-driven</td>
+<td>Goal-driven</td>
+</tr>
+
+<tr>
+<td>Starts with</td>
+<td>Facts</td>
+<td>Goal</td>
+</tr>
+
+<tr>
+<td>Direction</td>
+<td>Facts → Conclusion</td>
+<td>Conclusion → Facts</td>
+</tr>
+
+</table>
+
+</section>
+
+
+<footer>
+<p>© 2026 AI Fault Diagnosis Project</p>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

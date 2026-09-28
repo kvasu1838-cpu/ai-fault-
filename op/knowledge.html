@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Knowledge Base</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+<span>AI</span> Fault Diagnosis
+</div>
+
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+<ul class="nav-links" id="navLinks">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="forward.html">Forward</a></li>
+<li><a href="backward.html">Backward</a></li>
+<li><a href="diagnosis.html">Diagnosis</a></li>
+<li><a class="active" href="knowledge.html">Knowledge</a></li>
+<li><a href="examples.html">Examples</a></li>
+<li><a href="references.html">References</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+
+<section class="page-title">
+
+<h1>Knowledge Base</h1>
+
+<p>Facts and rules used by the expert system</p>
+
+</section>
+
+
+<section class="section">
+
+<div class="heading">
+
+<p>IF-THEN RULES</p>
+
+<h2>Diagnostic Rules</h2>
+
+</div>
+
+
+<div class="rule-grid">
+
+
+<div class="rule-card">
+
+<span>R01</span>
+
+<h3>Power Supply</h3>
+
+<p>
+IF no_power AND no_led
+</p>
+
+<strong>
+THEN power_supply_failure
+</strong>
+
+</div>
+
+
+<div class="rule-card">
+
+<span>R02</span>
+
+<h3>Cooling System</h3>
+
+<p>
+IF overheat AND fan
+</p>
+
+<strong>
+THEN cooling_failure
+</strong>
+
+</div>
+
+
+<div class="rule-card">
+
+<span>R03</span>
+
+<h3>CPU Overheating</h3>
+
+<p>
+IF overheat AND shutdown
+</p>
+
+<strong>
+THEN cpu_overheating
+</strong>
+
+</div>
+
+
+<div class="rule-card">
+
+<span>R04</span>
+
+<h3>Hard Disk</h3>
+
+<p>
+IF noise AND disk
+</p>
+
+<strong>
+THEN hard_disk_failure
+</strong>
+
+</div>
+
+
+<div class="rule-card">
+
+<span>R05</span>
+
+<h3>Memory / Driver</h3>
+
+<p>
+IF blue AND restart
+</p>
+
+<strong>
+THEN memory_driver_problem
+</strong>
+
+</div>
+
+
+<div class="rule-card">
+
+<span>R06</span>
+
+<h3>Storage</h3>
+
+<p>
+IF slow AND disk
+</p>
+
+<strong>
+THEN storage_problem
+</strong>
+
+</div>
+
+
+<div class="rule-card">
+
+<span>R07</span>
+
+<h3>Display</h3>
+
+<p>
+IF no_power AND display
+</p>
+
+<strong>
+THEN display_power_problem
+</strong>
+
+</div>
+
+
+<div class="rule-card">
+
+<span>R08</span>
+
+<h3>Network</h3>
+
+<p>
+IF network
+</p>
+
+<strong>
+THEN network_problem
+</strong>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+<p>© 2026 AI Fault Diagnosis Project</p>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
